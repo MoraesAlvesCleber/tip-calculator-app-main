@@ -1,0 +1,149 @@
+:root {
+
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+
+    /*font family*/
+    --DM: 'DM Sans', sans-serif;
+    --Nunito: 'Nunito Sans', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+
+}
+
+body {
+    background: var(--Light-grayish-cyan);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+main{
+    background: var(--White);
+    width: 54vw;
+    height: 60vh; 
+    border-radius: 20px;
+    display: flex;
+}
+
+.div-input{
+    width: 100%;
+    text-align: center;
+}
+
+.text{
+    font-family: var(--Nunito);
+    text-align: start;
+    margin: 35px 35px 10px;
+}
+
+.inputon{
+    width: 90%;
+    background-color: var(--Very-light-grayish-cyan);
+    border-color: var(--Very-dark-cyan);
+    border: none;
+    height: 34px;
+    margin-left: 20px;
+    text-align: right;
+    font-size: 18px !important;
+}
+
+.calculation{
+    background: var(--White);
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.result-section{
+    background: var(--Very-dark-cyan);
+    width: 50%;
+    border-radius: 20px;
+    margin: 20px 20px;
+}
+
+.div-custon-text{
+     width: 100%;
+}
+
+
+.custon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    width: 80%;
+}
+
+.button{
+    background: var(--Very-dark-cyan);
+    color: var(--White);
+    border: none;
+    width: 90px;
+    height: 6vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.custon-input{
+    width: 74px;
+    height: 34px;
+    border-radius: 5px;
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    text-align: center;
+}
+
+.container-result-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 20px;
+}
+
+.result-text{
+    color: var(--White);
+    font-size: 18px;
+    font-family: var(--Poppins);
+    font-weight: 400;
+}
+
+.person-text{
+    color: var(--Grayish-cyan);
+    font-size: 12px;
+    font-family: var(--DM);
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.result-number{
+    color: var(--Strong-cyan);
+    font-size: 34px;
+}
+
+.reset{
+    background: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    font-family: var(--Nunito);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    width: 88%;
+    height: 6vh;
+    margin: 40px 20px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+}

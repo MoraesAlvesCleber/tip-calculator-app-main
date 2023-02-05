@@ -8,6 +8,15 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&family=Nunito+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,12 +36,15 @@
   <main>
 
     <div class="calculation">
-      <div class="bill">
-        <p class="bill-text">Bill</p>
-        <input id="bill-input" class="bill-input input" type="text">
+      <div class="div-input">
+        <p class="bill-text text">Bill</p>
+        <input id="bill-input" class="bill-input inputon" type="text" placeholder="0">
       </div>
+      <div class="div-custon-text">
+        <p class="custon-text text">Select Tip %</p>
+      </div>
+
       <div class="custon">
-        <p class="custon-text">Select Tip %</p>
         <button class="button">5%</button>
         <button class="button">10%</button>
         <button class="button">15%</button>
@@ -41,46 +53,43 @@
         <input class="custon-input" type="text" placeholder="Custon">
       </div>
 
-      <div class="number-people">
-        <p class="namber-people-text">Number of People</p>
-        <input class="number-people-input input" type="text">
+      <div class="div-input">
+        <p class="namber-people-text text">Number of People</p>
+        <input class="number-people-input inputon" type="text" placeholder="0">
       </div>
 
     </div>
 
-    <div class="result">
+    <div class="result-section">
 
-      <p class="tip-amount-text"> Tip Amount <br> / person </p>
-      <div class="tip-amount-result"></div>
+      <div class="container-result-text">
+        <div class="tip-result">
+          <p class="result-text"> Tip Amount </p>
+          <p class="person-text"> / person </p>
+        </div>
 
-      <p class="total-text">Total <br> /person </p>
-      <div class="total-result"></div>
+        <div class="result-number" id="tip-amount-resul"> $0 </div>
 
-      <button class="reset" id="reset">Reset</button>
+      </div>
+
+      <div class="container-result-text">
+        <div class="total-result">
+          <p class="result-text"> Total </p>
+          <p class="person-text"> / person </p>
+        </div>
+
+        <div class="result-number" id="total-result"> $0 </div>
+
+      </div>
+
+
+      <button class="reset" id="button-reset">Reset</button>
 
     </div>
 
   </main>
 
-  Bill
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
 
   <!--<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
