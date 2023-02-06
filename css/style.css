@@ -27,8 +27,8 @@ body {
 
 main{
     background: var(--White);
-    width: 54vw;
-    height: 60vh; 
+    width: 55vw;
+    height: 61vh; 
     border-radius: 20px;
     display: flex;
 }
@@ -68,8 +68,8 @@ main{
 .result-section{
     background: var(--Very-dark-cyan);
     width: 50%;
-    border-radius: 20px;
-    margin: 20px 20px;
+    border-radius: 10px;
+    margin: 22px 22px;
 }
 
 .div-custon-text{
@@ -83,16 +83,16 @@ main{
     align-items: center;
     justify-items: center;
     gap: 10px;
-    width: 80%;
+    width: 78%;
 }
 
 .button{
     background: var(--Very-dark-cyan);
     color: var(--White);
     border: none;
-    width: 90px;
+    width: 95px;
     height: 6vh;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 .custon-input{
@@ -108,7 +108,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 20px;
+    margin: 50px 28px;
 }
 
 .result-text{
@@ -139,9 +139,9 @@ main{
     font-size: 14px;
     font-weight: bolder;
     letter-spacing: 5px;
-    width: 88%;
+    width: 84%;
     height: 6vh;
-    margin: 40px 20px 0;
+    margin: 40px 30px 0;
     border-radius: 5px;
     border: none;
     cursor: pointer;
