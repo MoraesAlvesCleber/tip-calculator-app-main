@@ -47,12 +47,14 @@ main{
 .inputon{
     width: 90%;
     background-color: var(--Very-light-grayish-cyan);
-    border-color: var(--Very-dark-cyan);
     border: none;
     height: 34px;
     margin-left: 20px;
     text-align: right;
     font-size: 18px !important;
+}
+#bill-input:focus{
+    border-color: var(--Light-grayish-cyan);
 }
 input#bill-input{
     background-image: url(/images/icon-dollar.svg);
@@ -116,6 +118,9 @@ input#people-input{
     border-radius: 5px;
     cursor: pointer;
 }
+.button:hover{
+    background:var(--Strong-cyan);
+}
 .custon-input{
     width: 74px;
     height: 34px;
@@ -166,5 +171,8 @@ input#people-input{
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    
+}
+
+.reset:hover{
+    background: var(--Light-grayish-cyan);
 }
