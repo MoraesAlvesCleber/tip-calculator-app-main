@@ -27,8 +27,8 @@ body {
 
 main{
     background: var(--White);
-    width: 55vw;
-    height: 61vh; 
+    width: 741px;
+    height: 378px; 
     border-radius: 20px;
     display: flex;
 }

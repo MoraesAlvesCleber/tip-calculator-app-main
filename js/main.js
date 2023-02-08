@@ -1,6 +1,6 @@
-var billInput = document.querySelector("#bill-input").value;
-var custonInput = document.querySelector("#custon-input").value;
-var peopleInput = document.querySelector("#people-input").value;
+var billInput = document.querySelector("#bill-input");
+var custonInput = document.querySelector("#custon-input");
+var peopleInput = document.querySelector("#people-input");
 
 var buttonCinco = document.querySelector("#button-cinco");
 var buttonDez = document.querySelector("#button-dez");
@@ -18,12 +18,26 @@ var totalResult = document.querySelector("#total-result");
 //Valor da conta / Número pessoas =  Conta de Cada Pessoa --->     100 /   2   =    50
 //Conta de Cada Pessoa = Gorjeta de Cada Pessoa --->                50 +   2.5 =    52.5
 
-var accountValue = billInput;
-var percentageValue = buttonCinco;
+function start() {
+    printTip();
+    printSplitAccoun();
 
-function fivePercent() {
-    let five = 5;
-    return five;
+
 }
 
+let totalValue = custonInput.value * billInput.value / 100;
+    
+function printTip() {
 
+    let totalNumber = totalValue / peopleInput.value;
+    tipAmountResult.textContent = totalNumber;
+}
+
+function printSplitAccoun() {
+
+    let total = billInput.value / peopleInput.value;
+    totalResult.textContent = total;
+
+}
+
+buttonCinco.addEventListener("click", start);
