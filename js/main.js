@@ -1,16 +1,16 @@
-var billInput = document.querySelector("#bill-input");
-var custonInput = document.querySelector("#custon-input");
-var peopleInput = document.querySelector("#people-input");
+let billInput = document.querySelector("#bill-input");
+let custonInput = document.querySelector("#custon-input");
+let peopleInput = document.querySelector("#people-input");
 
 
-var buttonCinco = document.querySelector("#button-cinco");
-var buttonDez = document.querySelector("#button-dez");
-var buttonQuinze = document.querySelector("#button-quinze");
-var buttonVinteCinco = document.querySelector("#button-vinte-cinco");
-var buttonCinqyuenta = document.querySelector("#button-cinquenta");
+let buttonCinco = document.querySelector("#button-cinco");
+let buttonDez = document.querySelector("#button-dez");
+let buttonQuinze = document.querySelector("#button-quinze");
+let buttonVinteCinco = document.querySelector("#button-vinte-cinco");
+let buttonCinqyuenta = document.querySelector("#button-cinquenta");
 
-var tipAmountResult = document.querySelector("#tip-amount-result");
-var totalResult = document.querySelector("#total-result");
+let tipAmountResult = document.querySelector("#tip-amount-result");
+let totalResult = document.querySelector("#total-result");
 
 
 //Valor da Conta + x% = Valor Total  --->                          100 + 5%    =   105
@@ -31,23 +31,24 @@ var totalResult = document.querySelector("#total-result");
 //   document.getElementById("#tip-amount-result").textContent = texto});    
 //}
 
-var buttonPercent = document.querySelectorAll(".button-percent");
 
-function teste (id,value) {
 
-    document.querySelector(id).addEventListener("click", function () {
-        totalResult.textContent = value * billInput / 100;
+
+
+function teste(x, y) {
+    
+    document.querySelector(x).addEventListener("click", function () {
+        totalResult.textContent = y * billInput / 100;
     });
 }
-
-
-for (var i = 0; i < buttonPercent.length; i++) {
-    var ev = buttonPercent[i].id;
-    var value = buttonPercent[i].value;
-    teste(ev ,value);
-
+let buttonPercent = document.querySelectorAll('.button-percent');
+ 
+for (let i = 0; i < buttonPercent.length; i++) {
+    let x = buttonPercent[i].id;
+    let y = buttonPercent[i].value;
+    console.log(x, y);
+    teste(x, y);
 }
-
 
 
 //function printTip() {
