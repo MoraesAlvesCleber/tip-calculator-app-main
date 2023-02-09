@@ -109,7 +109,7 @@ input#people-input{
     width: 78%;
 }
 
-.button{
+.button-percent{
     background: var(--Very-dark-cyan);
     color: var(--White);
     border: none;
@@ -118,7 +118,7 @@ input#people-input{
     border-radius: 5px;
     cursor: pointer;
 }
-.button:hover{
+.button-percent:hover{
     background:var(--Strong-cyan);
 }
 .custon-input{
