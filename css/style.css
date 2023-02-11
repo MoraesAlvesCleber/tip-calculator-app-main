@@ -121,6 +121,12 @@ input#people-input{
 .button-percent:hover{
     background:var(--Strong-cyan);
 }
+
+
+.button-percent:active{
+    background:var(--Strong-cyan);
+}
+ 
 .custon-input{
     width: 74px;
     height: 34px;

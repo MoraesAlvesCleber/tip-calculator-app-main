@@ -12,23 +12,40 @@ let totalResult = document.querySelector("#total-result");
 //Valor da conta / Número pessoas =  Conta de Cada Pessoa --->     100 /   2   =    50
 //Conta de Cada Pessoa = Gorjeta de Cada Pessoa --->                50 +   2.5 =    52.5
 
- 
+
 function teste(x, y) {
-    
+
     document.querySelector("#" + x).addEventListener("click", function () {
-        let percentage =  y * billInput.value / 100;
+        let percentage = y * billInput.value / 100;
         totalResult.textContent = percentage / peopleInput.value;
         tipAmountResult.textContent = billInput.value / peopleInput.value;
     });
 }
+function custonPercent() {
+
+    tipAmountResult.textContent = billInput.value / peopleInput.value;
+    let peoplePercent = peopleInput.value * billInput.value / 100;
+    totalResult.textContent = peoplePercent;
+
+}
 
 let buttonPercent = document.querySelectorAll('.button-percent');
- 
+
+
 
 for (let i = 0; i < buttonPercent.length; i++) {
     let x = buttonPercent[i].id;
-    let y = buttonPercent[i].value; 
+    let y = buttonPercent[i].value;
     let z = buttonPercent[i];
 
     teste(x, y);
+
 }
+
+function percent (){
+    if (customInput === true) {
+
+        custonPercent();
+    }
+}
+percent();
