@@ -24,9 +24,10 @@ function teste(x, y) {
 function custonPercent() {
 
     tipAmountResult.textContent = billInput.value / peopleInput.value;
-    let peoplePercent = peopleInput.value * billInput.value / 100;
-    totalResult.textContent = peoplePercent;
-
+    let peoplePercent = custonInput.value * billInput.value / 100;
+    let peolpleCalc = peoplePercent / peopleInput.value;
+    totalResult.textContent = peolpleCalc;
+     
 }
 
 let buttonPercent = document.querySelectorAll('.button-percent');
@@ -42,10 +43,8 @@ for (let i = 0; i < buttonPercent.length; i++) {
 
 }
 
-function percent (){
-    if (customInput === true) {
-
-        custonPercent();
-    }
-}
-percent();
+custonInput.addEventListener("input", (e) => {
+    const value = e.target.value;
+    selectedTip = parseFloat(value);
+    custonPercent();
+  });
