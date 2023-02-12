@@ -22,6 +22,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
    
 }
 
@@ -36,8 +37,9 @@ main{
 @media (max-width: 412px) {
     main{
         width: 360px;
-        height: 800px;
+        height: 672px;
         flex-direction: column;
+        margin-top: -20px;
     }
 }
 
@@ -114,7 +116,7 @@ input#people-input{
     .result-section{
         width: 88%;
         margin: 50px 22px;
-        height: 314px;
+        height: 284px;
     }
 }
 
@@ -164,6 +166,11 @@ input#people-input{
     justify-content: space-between;
     align-items: center;
     margin: 50px 28px;
+}
+@media (max-width: 412px){
+    .container-result-text{
+        margin: 40px 28px;
+    }
 }
 
 .result-text{
