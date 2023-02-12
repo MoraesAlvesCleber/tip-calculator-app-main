@@ -20,9 +20,8 @@ function teste(x, y) {
             let percentage = y * billInput.value / 100;
             totalResult.textContent = percentage / peopleInput.value;
             tipAmountResult.textContent = billInput.value / peopleInput.value;
+            custonInput.value = "";
         }
-
-
     });
 }
 function custonPercent() {
@@ -59,6 +58,9 @@ function reset() {
     peopleInput.value = "";
 
     tipAmountResult.textContent = "";
-    totalResult.textContent= "";
+    totalResult.textContent = "";
 
+}
+function delCuston(){
+    custonInput.value = "";
 }
