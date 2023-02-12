@@ -18,8 +18,8 @@ function teste(x, y) {
     document.querySelector("#" + x).addEventListener("click", function () {
         if (peopleInput.value != "") {
             let percentage = y * billInput.value / 100;
-            totalResult.textContent = percentage / peopleInput.value;
-            tipAmountResult.textContent = billInput.value / peopleInput.value;
+            totalResult.textContent = "$ " + percentage / peopleInput.value;
+            tipAmountResult.textContent = "$ " + billInput.value / peopleInput.value;
             custonInput.value = "";
         }
     });
@@ -57,8 +57,8 @@ function reset() {
     custonInput.value = "";
     peopleInput.value = "";
 
-    tipAmountResult.textContent = "";
-    totalResult.textContent = "";
+    tipAmountResult.textContent = "$ 0";
+    totalResult.textContent = "$ 0";
 
 }
 function delCuston(){
