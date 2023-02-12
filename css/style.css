@@ -5,7 +5,7 @@
     --Dark-grayish-cyan: hsl(186, 14%, 43%);
     --Grayish-cyan: hsl(184, 14%, 56%);
     --Light-grayish-cyan: hsl(185, 41%, 84%);
-    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 94%);
     --White: hsl(0, 0%, 100%);
 
     /*font family*/
@@ -33,6 +33,14 @@ main{
     display: flex;
 }
 
+@media (max-width: 412px) {
+    main{
+        width: 360px;
+        height: 800px;
+        flex-direction: column;
+    }
+}
+
 .div-input{
     width: 100%;
     text-align: center;
@@ -51,8 +59,15 @@ main{
     height: 34px;
     margin-left: 20px;
     text-align: right;
-    font-size: 18px !important;
+    font-size: 18px;
 }
+
+@media (max-width: 412px){
+    .inputon{
+        width: 300px !important;
+    }
+}
+
 #bill-input:focus{
     border-color: var(--Light-grayish-cyan);
 }
@@ -93,6 +108,14 @@ input#people-input{
     width: 50%;
     border-radius: 10px;
     margin: 22px 22px;
+}
+
+@media (max-width: 412px) {
+    .result-section{
+        width: 88%;
+        margin: 50px 22px;
+        height: 314px;
+    }
 }
 
 .div-custon-text{
@@ -177,6 +200,11 @@ input#people-input{
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+@media (max-width:420px) {
+    .reset{
+        margin: 0 0 0 26px;
+    }
 }
 
 .reset:hover{
