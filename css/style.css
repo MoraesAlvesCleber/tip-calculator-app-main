@@ -36,7 +36,7 @@ main{
 
 @media (max-width: 412px) {
     main{
-        width: 360px;
+        width: 332px;
         height: 672px;
         flex-direction: column;
         margin-top: -20px;
@@ -53,6 +53,11 @@ main{
     text-align: start;
     margin: 35px 35px 10px;
 }
+@media (max-width: 412px){
+    .text{
+        margin: 25px 35px 10px;
+    }
+}
 
 .inputon{
     width: 90%;
@@ -66,7 +71,7 @@ main{
 
 @media (max-width: 412px){
     .inputon{
-        width: 300px !important;
+        width: 274px !important;
     }
 }
 
@@ -115,7 +120,7 @@ input#people-input{
 @media (max-width: 412px) {
     .result-section{
         width: 88%;
-        margin: 50px 22px;
+        margin: 32px 22px;
         height: 284px;
     }
 }
@@ -132,6 +137,11 @@ input#people-input{
     justify-items: center;
     gap: 10px;
     width: 78%;
+}
+@media (max-width: 412px){
+    .custon{
+        margin-right: 8px;
+    }
 }
 
 .button-percent{
@@ -169,7 +179,7 @@ input#people-input{
 }
 @media (max-width: 412px){
     .container-result-text{
-        margin: 40px 28px;
+        margin: 28px 28px;
     }
 }
 
@@ -210,7 +220,7 @@ input#people-input{
 }
 @media (max-width:420px) {
     .reset{
-        margin: 0 0 0 26px;
+        margin: 20px 0 0 26px;
     }
 }
 
