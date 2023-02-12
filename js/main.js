@@ -18,8 +18,8 @@ function teste(x, y) {
     document.querySelector("#" + x).addEventListener("click", function () {
         if (peopleInput.value != "") {
             let percentage = y * billInput.value / 100;
-            totalResult.textContent = "$ " + percentage / peopleInput.value;
-            tipAmountResult.textContent = "$ " + billInput.value / peopleInput.value;
+            totalResult.textContent = "$ " + billInput.value / peopleInput.value;
+            tipAmountResult.textContent = "$ " + percentage / peopleInput.value;
             custonInput.value = "";
         }
     });
