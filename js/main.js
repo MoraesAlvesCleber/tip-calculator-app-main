@@ -16,22 +16,26 @@ let totalResult = document.querySelector("#total-result");
 function teste(x, y) {
 
     document.querySelector("#" + x).addEventListener("click", function () {
-        let percentage = y * billInput.value / 100;
-        totalResult.textContent = percentage / peopleInput.value;
-        tipAmountResult.textContent = billInput.value / peopleInput.value;
+        if (peopleInput.value != "") {
+            let percentage = y * billInput.value / 100;
+            totalResult.textContent = percentage / peopleInput.value;
+            tipAmountResult.textContent = billInput.value / peopleInput.value;
+        }
+
+
     });
 }
 function custonPercent() {
 
-    tipAmountResult.textContent = billInput.value / peopleInput.value;
-    let peoplePercent = custonInput.value * billInput.value / 100;
-    let peolpleCalc = peoplePercent / peopleInput.value;
-    totalResult.textContent = peolpleCalc;
-     
+    if (peopleInput.value != "") {
+        tipAmountResult.textContent = billInput.value / peopleInput.value;
+        let peoplePercent = custonInput.value * billInput.value / 100;
+        let peolpleCalc = peoplePercent / peopleInput.value;
+        totalResult.textContent = peolpleCalc;
+    }
 }
 
 let buttonPercent = document.querySelectorAll('.button-percent');
-
 
 
 for (let i = 0; i < buttonPercent.length; i++) {
@@ -40,11 +44,21 @@ for (let i = 0; i < buttonPercent.length; i++) {
     let z = buttonPercent[i];
 
     teste(x, y);
-
 }
 
-custonInput.addEventListener("input", (e) => {
-    const value = e.target.value;
-    selectedTip = parseFloat(value);
+custonInput.addEventListener("input", () => {
+    //const value = e.target.value;
+    //selectedTip = parseFloat(value);
     custonPercent();
-  });
+});
+
+function reset() {
+
+    billInput.value = "";
+    custonInput.value = "";
+    peopleInput.value = "";
+
+    tipAmountResult.textContent = "";
+    totalResult.textContent= "";
+
+}
