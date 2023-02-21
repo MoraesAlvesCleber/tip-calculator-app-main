@@ -1,0 +1,64 @@
+.div-input {
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    font-family: var(--Nunito);
+    text-align: start;
+    margin: 35px 35px 10px;
+}
+
+@media (max-width: 412px) {
+    .text {
+        margin: 25px 35px 10px;
+    }
+}
+
+.inputon {
+    width: 90%;
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    height: 34px;
+    margin-left: 20px;
+    text-align: right;
+    font-size: 18px;
+}
+
+@media (max-width: 412px) {
+    .inputon {
+        width: 274px !important;
+    }
+}
+
+#bill-input:focus {
+    border-color: var(--Light-grayish-cyan);
+}
+
+input#bill-input {
+    background-image: url(/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-position: left;
+    background-position-x: 18px;
+    padding-right: 18px;
+
+}
+
+input#people-input {
+    background-image: url(/images/icon-person.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-position: left;
+    background-position-x: 18px;
+    padding-right: 18px;
+
+}
+.custon-input {
+    width: 74px;
+    height: 34px;
+    border-radius: 5px;
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    text-align: center;
+}

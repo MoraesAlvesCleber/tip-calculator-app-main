@@ -1,0 +1,36 @@
+.result-text {
+    color: var(--White);
+    font-size: 18px;
+    font-family: var(--Poppins);
+    font-weight: 400;
+}
+.container-result-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 28px;
+}
+
+@media (max-width: 412px) {
+    .container-result-text {
+        margin: 28px 28px;
+    }
+}
+.person-text {
+    color: var(--Grayish-cyan);
+    font-size: 12px;
+    font-family: var(--DM);
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.result-number {
+    color: var(--Strong-cyan);
+    font-size: 34px;
+}
+
+@media (max-width: 412px) {
+    .result-number {
+        font-size: 24px;
+    }
+}

@@ -1,3 +1,8 @@
+@import url(/css/style-input.css);
+@import url(/css/style-button.css);
+@import url(/css/style-result.css);
+@import url(/css/style-delete.css);
+
 :root {
 
     --Strong-cyan: hsl(172, 67%, 45%);
@@ -23,19 +28,19 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
+
 }
 
-main{
+main {
     background: var(--White);
     width: 741px;
-    height: 378px; 
+    height: 378px;
     border-radius: 20px;
     display: flex;
 }
 
 @media (max-width: 412px) {
-    main{
+    main {
         width: 332px;
         height: 672px;
         flex-direction: column;
@@ -43,74 +48,17 @@ main{
     }
 }
 
-.div-input{
-    width: 100%;
-    text-align: center;
-}
-
-.text{
-    font-family: var(--Nunito);
-    text-align: start;
-    margin: 35px 35px 10px;
-}
-@media (max-width: 412px){
-    .text{
-        margin: 25px 35px 10px;
-    }
-}
-
-.inputon{
-    width: 90%;
-    background-color: var(--Very-light-grayish-cyan);
-    border: none;
-    height: 34px;
-    margin-left: 20px;
-    text-align: right;
-    font-size: 18px;
-}
-
-@media (max-width: 412px){
-    .inputon{
-        width: 274px !important;
-    }
-}
-
-#bill-input:focus{
-    border-color: var(--Light-grayish-cyan);
-}
-input#bill-input{
-    background-image: url(/images/icon-dollar.svg);
-    background-repeat: no-repeat;
-    text-indent: 20px;
-    background-position: left;
-    background-position-x: 18px;
-    padding-right: 18px;
-
-}
-input#people-input{
-    background-image: url(/images/icon-person.svg);
-    background-repeat: no-repeat;
-    text-indent: 20px;
-    background-position: left;
-    background-position-x: 18px;
-    padding-right: 18px;
-
-}
-/*input#bill-input:focus{
-    background-image:none;
-   }*/
-
-.calculation{
+.calculation {
     background: var(--White);
     border-radius: 20px;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.result-section{
+.result-section {
     background: var(--Very-dark-cyan);
     width: 50%;
     border-radius: 10px;
@@ -118,19 +66,19 @@ input#people-input{
 }
 
 @media (max-width: 412px) {
-    .result-section{
+    .result-section {
         width: 88%;
         margin: 32px 22px;
         height: 284px;
     }
 }
 
-.div-custon-text{
-     width: 100%;
+.div-custon-text {
+    width: 100%;
 }
 
 
-.custon{
+.custon {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -138,97 +86,9 @@ input#people-input{
     gap: 10px;
     width: 78%;
 }
-@media (max-width: 412px){
-    .custon{
+
+@media (max-width: 412px) {
+    .custon {
         margin-right: 8px;
     }
-}
-
-.button-percent{
-    background: var(--Very-dark-cyan);
-    color: var(--White);
-    border: none;
-    width: 95px;
-    height: 6vh;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.button-percent:hover{
-    background:var(--Strong-cyan);
-}
-
-
-.button-percent:active{
-    background:var(--Strong-cyan);
-}
- 
-.custon-input{
-    width: 74px;
-    height: 34px;
-    border-radius: 5px;
-    background-color: var(--Very-light-grayish-cyan);
-    border: none;
-    text-align: center;
-}
-
-.container-result-text{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px 28px;
-}
-@media (max-width: 412px){
-    .container-result-text{
-        margin: 28px 28px;
-    }
-}
-
-.result-text{
-    color: var(--White);
-    font-size: 18px;
-    font-family: var(--Poppins);
-    font-weight: 400;
-}
-
-.person-text{
-    color: var(--Grayish-cyan);
-    font-size: 12px;
-    font-family: var(--DM);
-    font-weight: 300;
-    margin-top: 10px;
-}
-
-.result-number{
-    color: var(--Strong-cyan);
-    font-size: 34px;
-}
-@media (max-width: 412px){
-    .result-number{
-    font-size: 24px;
-}
-}
-
-.reset{
-    background: var(--Strong-cyan);
-    color: var(--Very-dark-cyan);
-    font-family: var(--Nunito);
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bolder;
-    letter-spacing: 5px;
-    width: 84%;
-    height: 6vh;
-    margin: 40px 30px 0;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-@media (max-width:420px) {
-    .reset{
-        margin: 20px 0 0 26px;
-    }
-}
-
-.reset:hover{
-    background: var(--Light-grayish-cyan);
 }

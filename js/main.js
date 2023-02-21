@@ -27,10 +27,10 @@ function teste(x, y) {
 function custonPercent() {
 
     if (peopleInput.value != "") {
-        tipAmountResult.textContent = billInput.value / peopleInput.value;
         let peoplePercent = custonInput.value * billInput.value / 100;
         let peolpleCalc = peoplePercent / peopleInput.value;
-        totalResult.textContent = peolpleCalc;
+        tipAmountResult.textContent = peolpleCalc;
+        totalResult.textContent = billInput.value / peopleInput.value;
     }
 }
 
